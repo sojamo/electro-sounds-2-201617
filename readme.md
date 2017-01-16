@@ -189,6 +189,7 @@ Other frameworks for creative coding include
 - [Processing Reference](https://processing.org/reference/)
 - [Processing Tutorials](https://processing.org/tutorials/)
 - [Processing Forum](https://forum.processing.org/two/discussions)
+- Getting started with p5.js including browser based examples. [First steps with p5.js](http://creative-coding.decontextualize.com/) by [Allison Parrish](http://www.decontextualize.com/)
 
 
 ### Talks
