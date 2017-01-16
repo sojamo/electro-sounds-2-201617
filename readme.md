@@ -7,7 +7,7 @@
 - [Semester 2](#semester-2)
 - [Sessions](#sessions)
   - [Session 1: The Basics](#session-1)
-  - [Session 2: Algorithms and Data](#session-2)
+  - [Session 2: From Sketch to Video](#session-2)
   - [Session 3: Algorithms and Data](#session-3)
   - [Session 4: Generative Music Video proposal](#session-4)
   - [Session 5: Open Session and Independent Work](#session-5)
@@ -124,12 +124,28 @@ In this session we will also look at different forms of data input and how this 
 ## Assignments
 This semester you will learn about generative systems and processes, the following 4 assignments will help you exercise and practice various coding techniques covered in class.
 
-  1. **Assignment A** Create a series of 3 sketches that resemble one work of each of the following artists: Frieder Nake, Sol Lewitt, Ryoji Ikeda. *(naming convention, sketch size is 960x540, include image in data folder)*
+  1. **Assignment A** Create a series of 3 sketches that resemble one work of each of the following artists: Frieder Nake, Sol Lewitt, Ryoji Ikeda.
+    - Sketch size is 960x540px
+    - Add reference image to the sketch folder
+
   2. **Assignment B** Use a selection of your current Processing sketches which use code to animate abstract, geometric visuals. Add your own sound track that supports the visuals and create a 15 seconds long generative video.
-     - sketch size is 1280x720px (720p)
-     - format and quality follows the vimeo compression guidelines [link](https://vimeo.com/help/compression)
-  3. **Assignment C** Choose one Processing project from the Processing Exhibition that relates to the concept of Generative Art (see References to get to know more about Generative Art) and describe in 150 words why you like the project. Then describe in your own words (150) how the project works technically. Create a Processing sketch that visually-animated illustrates one aspect of the project you have chosen. *(Description: use the markdown format and export your document as pdf. structure your text properly and include 2 project images and 1 sketch still. Finally include references)*
-  4. **Assignment D** Create a 120 seconds music video using your own sound track and a range of coding techniques you have learned so far. Combine at least one of each of the following categories: **A** algorithmic, generative, interactive, geometric **B** camera reactive, audio reactive, shaders, **C** midi, live performance, projection mapping, animated-gifs **D** mellow, calm, suspense, frantic *(sketch format is 1920x1080, sketch and process archived on github, process documentation, project description (elaborate on the techniques used, give examples), title)*
+     - Sketch size is 1280x720px (720p)
+     - Video format and quality follows the vimeo compression guidelines [link](https://vimeo.com/help/compression)
+
+  3. **Assignment C** Choose one Processing project from the Processing Exhibition that relates to the concept of Generative Art (see References to get to know more about Generative Art) and describe in 150 words why you like the project. Then describe in your own words (150) how the project works technically. Create a Processing sketch that visually-animated illustrates one aspect of the project you have chosen.
+    - Description: use the markdown format and export your document as pdf
+    - Structure your text properly and include 2 project images and 1 sketch still
+    - Include references into your document
+
+  4. **Assignment D** Create a 120 seconds music video using your own sound track and a range of coding techniques you have learned so far. Combine at least one of each of the following categories: **A** algorithmic, generative, interactive, geometric **B** camera reactive, audio reactive, shaders, **C** midi, live performance, projection mapping, animated-gifs **D** mellow, calm, suspense, frantic
+    - Sketch format is 1280x720px (720p)
+    - Sketch and process archived on github
+    - Video available on vimeo, follow the vimeo compression guidelines
+    - Proposal
+    - Project title
+    - Project description (elaborate on the techniques used, give examples)
+    - Process documentation
+
 
 All assignments accumulate to one final project. All assignments must be documented on your blog.
 
