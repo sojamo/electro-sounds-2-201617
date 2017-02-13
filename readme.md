@@ -47,7 +47,7 @@ Art, Milan, Italy, 2003._
 In this class we will focus on the technical aspects of coding but it is highly recommended to dive into the subject with an open mind for cultural, theoretical and contextual discussions to shape your artistic thinking and making. A range of examples and starting points are given to you in class and in this document.
 
 ## Sessions
-There will be 4 sessions this semester. Each week we will meet for 3 hours, optional and upon appointment you can book individual tutorials (up to 30 minutes) with me.
+There will be 5 sessions this semester. Each week we will meet for 3 hours, optional and upon appointment you can book individual tutorials (up to 30 minutes) with me.
 
 ### Session 1
 
