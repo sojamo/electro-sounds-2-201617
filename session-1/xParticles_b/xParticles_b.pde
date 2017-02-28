@@ -1,73 +1,73 @@
+/* This sketch show you how to create a custom class
+ * With a keyPressed (key 1) you can add instances of this class (an object) to an arraylist
+ * and display them inside the sketch-window. with another keyPressed (key 2) you
+ * can remove objects from the arraylist.
+ *
+ * A variation of sketch hObjects_a
+ *
+ */
 
-ArrayList<Particle> particles;
-Lines lines;
+ArrayList<MyObject> objects;
 
 void setup() {
   size(960, 540, P3D);
-  hint(DISABLE_DEPTH_TEST);
-  particles = new ArrayList();
-  for (int i=0; i<400; i++) {
-    particles.add(new Particle());
-  }
-
-  lines = new Lines();
-  strokeWeight(2);
-  background(0);
+  noStroke();
+  objects = new ArrayList<MyObject>();
+  objects.add(new MyObject());
 }
-
 
 void draw() {
-  noStroke();
-  fill(0, 10);
-  rect(0, 0, width, height);
-
-  translate(width/2, height/2);
-  rotateX(frameCount*0.01);
-  noStroke();
-  fill(255);
-  for (Particle particle : particles) {
-    particle.update();
+  // background(240);
+  for(MyObject o:objects) {
+    o.update();
+    o.draw();
   }
-  stroke(255, 32);
-  lines.update(particles);
 }
 
-class Particle {
 
-  PVector position = new PVector(0, 0, random(-200, 200));
-  float speed = random(1, 5);
-  float distance = 0;
-  float radius = random(100, 200);
+void keyPressed() {
+  switch(key) {
+    case('1'):
+    for(int i=0;i<100;i++) {
+    objects.add(new MyObject());
+    }
+    break;
+    case('2'):
+    if(objects.isEmpty()==false) {
+      objects.remove(0);
+    }
+    break;
+  }
+  println("Currently active objects:", objects.size());
+}
 
-  void update() {
-    distance += speed*0.25;
-    position.x = sin(distance*0.01)*radius;
-    position.y = cos(distance*0.01)*radius;
-
+class MyObject {
+  float x,y;
+  float d;
+  float angle, speed;
+  int col;
+  
+  MyObject() {
+    x = random(0,width);
+    y = random(0,height);
+    d = random(4,40);
+    speed = random(-0.1,0.01);
+    col = color(random(255),random(255),random(255),10);
+    col = random(0,1) >0.5 ? color(255,20):color(0,20); // uncomment this line to switch to b/w
+    
+  }
+  
+  void draw() {
     pushMatrix();
-    translate(position.x, position.y, position.z );
-    //ellipse(0, 0, 4, 4);
+    translate(((x+frameCount)*speed*100)%width,y);
+    rotate(angle);
+    fill(col);
+    rect(0,0,4,d);
     popMatrix();
   }
-}
-
-
-class Lines {
-
-  void update(ArrayList<Particle> theParticles) {
-    for (int i=0; i<theParticles.size(); i++) {
-      for (int j=i; j<theParticles.size(); j++) {
-        float x0 =theParticles.get(i).position.x;
-        float y0 =theParticles.get(i).position.y;
-        float z0 =theParticles.get(i).position.z;
-        float x1 =theParticles.get(j).position.x;
-        float y1 =theParticles.get(j).position.y;
-        float z1 =theParticles.get(j).position.z;
-        float d = dist(x0, y0, z0, x1, y1, z1);
-        if (d<100) {
-          line(x0, y0, z0, x1, y1, z1);
-        }
-      }
-    }
+  
+  void update() {
+    angle += speed;
   }
+  
 }
