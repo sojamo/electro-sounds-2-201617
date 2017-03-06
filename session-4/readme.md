@@ -13,4 +13,7 @@
     - **B** camera reactive, audio reactive, shaders,
     - **C** midi, live performance, projection mapping, animated-gifs
     - **D** mellow, calm, suspense, frantic
-  - Submit your proposal by week 11 as a readme.md file as part of your music video's github repository
+
+
+  ## Submission  
+  Submit your proposal by week 11 as a readme.md file as part of your music video's github repository
